@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mengapa Informatika Itu Penting?</title>
+    <style>
+        /* CSS RESET & BASE */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* HEADER & HERO */
+        header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        /* CONTAINER */
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        /* ALASAN UTAMA (GRID) */
+        .grid-alasan {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-bottom: 50px;
+        }
+
+        .kartu-alasan {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border-top: 5px solid #2a5298;
+            transition: transform 0.3s ease;
+        }
+
+        .kartu-alasan:hover {
+            transform: translateY(-5px);
+        }
+
+        .kartu-alasan h3 {
+            color: #1e3c72;
+            margin-bottom: 12px;
+            font-size: 1.3rem;
+        }
+
+        /* SEKSI INTERAKTIF (KUIS MINI) */
+        .kuis-seksi {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 50px;
+        }
+
+        .kuis-seksi h2 {
+            color: #1e3c72;
+            margin-bottom: 15px;
+        }
+
+        .tombol-kuis {
+            background-color: #2a5298;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 1rem;
+            border-radius: 25px;
+            cursor: pointer;
+            margin: 10px;
+            transition: background 0.2s;
+        }
+
+        .tombol-kuis:hover {
+            background-color: #1e3c72;
+        }
+
+        #hasil-kuis {
+            margin-top: 20px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            color: #2e7d32;
+        }
+
+        /* SEKSI NAMA KELOMPOK */
+        .seksi-kelompok {
+            background-color: #eef2f7;
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .seksi-kelompok h2 {
+            color: #1e3c72;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+
+        .grid-anggota {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .nama-anggota {
+            background: white;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-weight: 600;
+            color: #2a5298;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            border: 1px solid #d0d7de;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1e3c72;
+            color: white;
+            margin-top: 60px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Banner Utama -->
+    <header>
+        <h1>Membangun Masa Depan dengan Informatika</h1>
+        <p>Kenapa computational thinking dan teknologi wajib dikuasai generasi muda?</p>
+    </header>
+
+    <div class="container">
+        
+        <!-- Seksi Alasan Utama -->
+        <div class="grid-alasan">
+            <div class="kartu-alasan">
+                <h3>1. Melatih Berpikir Komputasional</h3>
+                <p>Informatika bukan cuma soal mengetik atau aplikasi. Di sini kita belajar <em>Computational Thinking</em>—cara memecahkan masalah besar menjadi bagian-bagian kecil yang logis dan terstruktur.</p>
+            </div>
+            
+            <div class="kartu-alasan">
+                <h3>2. Bahasa Masa Depan</h3>
+                <p>Sama seperti bahasa Inggris yang menjadi bahasa global, coding dan pemahaman data adalah "bahasa" baru yang digunakan di hampir semua industri modern di dunia saat ini.</p>
+            </div>
+
+            <div class="kartu-alasan">
+                <h3>3. Mengubah Konsumen Jadi Kreator</h3>
+                <p>Alih-alih hanya menjadi pengguna (konsumen) game, aplikasi, atau media sosial, informatika melatih siswa untuk bisa menciptakan (kreator) teknologi mereka sendiri.</p>
+            </div>
+
+            <div class="kartu-alasan">
+                <h3>4. Kunci Menghadapi Otomasi</h3>
+                <p>Banyak pekerjaan masa depan akan digantikan oleh AI dan robotika. Memahami informatika memastikan kita menjadi pihak yang mengendalikan teknologi tersebut, bukan yang tergantikan.</p>
+            </div>
+        </div>
+
+        <!-- Seksi Interaktif: Mitos vs Fakta -->
+        <div class="kuis-seksi">
+            <h2>Mitos vs Fakta Informatika</h2>
+            <p><strong>Pertanyaan:</strong> "Belajar informatika itu artinya cuma belajar cara memperbaiki komputer rusak atau belajar mengetik cepat?"</p>
+            
+            <button class="tombol-kuis" onclick="cekJawaban('mitos')">Mitos</button>
+            <button class="tombol-kuis" onclick="cekJawaban('fakta')">Fakta</button>
+
+            <div id="hasil-kuis"></div>
+        </div>
+
+        <!-- Seksi Nama Kelompok -->
+        <div class="seksi-kelompok">
+            <h2>✨ Kelompok Penyusun ✨</h2>
+            <div class="grid-anggota">
+                <div class="nama-anggota">1. Rafa</div>
+                <div class="nama-anggota">2. Rama</div>
+                <div class="nama-anggota">3. Pahrel</div>
+                <div class="nama-anggota">4. Danang</div>
+                <div class="nama-anggota">5. Ahadin</div>
+                <div class="nama-anggota">6. Effendy</div>
+                <div class="nama-anggota">7. Dafa</div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Media Edukasi Informatika Sekolah. Ruang Berbagi Inspirasi.</p>
+    </footer>
+
+    <!-- JAVASCRIPT UNTUK INTERAKSI -->
+    <script>
+        function cekJawaban(pilihan) {
+            const hasilDiv = document.getElementById('hasil-kuis');
+            if (pilihan === 'mitos') {
+                hasilDiv.innerHTML = "✨ Tepat Sekali! Itu MITOS. <br><span style='font-weight: normal; font-size: 0.95rem; color: #555;'>Informatika jauh lebih luas dari itu. Kita belajar tentang logika, struktur data, kecerdasan buatan (AI), analisis data, hingga cara menciptakan solusi digital untuk masalah nyata!</span>";
+                hasilDiv.style.color = "#2e7d32";
+            } else {
+                hasilDiv.innerHTML = "❌ Kurang Tepat! <br><span style='font-weight: normal; font-size: 0.95rem; color: #555;'>Itu adalah mitos yang sering salah dipahami. Informatika bukan sekadar keterampilan teknis perangkat keras, melainkan ilmu tentang pemecahan masalah (problem-solving) menggunakan teknologi.</span>";
+                hasilDiv.style.color = "#c62828";
+            }
+        }
+    </script>
+
+</body>
+</html>
